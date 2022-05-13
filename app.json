@@ -3,7 +3,7 @@
   "logo": "https://telegra.ph//file/70b0074875aebdbf20b4f.jpg", 
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Gecekus/muzsk",
+  "repository": "https://github.com/amahocam/muudmusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
