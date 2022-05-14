@@ -17,7 +17,7 @@
 - `/oynat` - istediğiniz şarkıyı çal
 - `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
 - `/ara` - youtube'da ayrıntıları içeren videoları arama
-- `/ping  - bot ping durumunu kontrol eder
+- `/ping`  - bot ping durumunu kontrol eder
 #### Yalnızca yöneticiler 
 - `/ver` - üyeler için extra yetki 
 - `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
@@ -32,9 +32,9 @@
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 
 #### Owner İçin...
-- `/broadcast - Yayın mesajı
-- `/stats - grup istatisliği
-- `/alive botun aktif mesajı (sudo kullanıcı içinde geçerli)
+- `/broadcast` - Yayın mesajı
+- `/stats` - grup istatisliği
+- `/alive` botun aktif mesajı (sudo kullanıcı içinde geçerli)
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amahocam/muudmusic)
