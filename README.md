@@ -1,12 +1,12 @@
 
 <h2 align="centre">Muud Music Mp3 Oynatıcı 🎵</h2>
 
-### Güncellendi aktif.... 😇
+### Güncellendi aktif.... 
 <p align="center">
   <img src="https://telegra.ph//file/4c86190fcbe14428c8c6b.jpg">
 </p> 
 
-<h3>Sürümler 📮</h3>
+<h3>Sürümler 🧸</h3>
 
 - pyrogram version 0.9.0 
 
