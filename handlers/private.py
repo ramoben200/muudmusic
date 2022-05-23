@@ -190,7 +190,7 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("sudo"))
 async def admin(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 🤩\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n » /clear => indirilen tüm dosyaları siler ! \n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n\n ⚪ /asistan - Müzik asistanı grubunuza katılır.\n\n</b>""",
+    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 🤩\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n » /clear => indirilen tüm dosyaları siler ! \n » /hız => botun hızını öğren ! \n\n » /alive => botun çalışma durumunu gösterir ! \n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
