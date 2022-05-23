@@ -96,7 +96,7 @@ async def gstart(_, message: Message):
 
 @Client.on_message(filters.private & filters.incoming & filters.command(["help", f"help@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu dört yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.\n- Mesaj sabitleme yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -124,7 +124,7 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu dört yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.\n- Mesaj sabitleme yetkisi.", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
@@ -190,7 +190,7 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("sudo"))
 async def admin(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 🤩\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n » /alive => botun çalışma durumunu gösterir ! \n\n</b>""",
+    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 👨‍💻\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n » /alive => botun çalışma durumunu gösterir ! \n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
