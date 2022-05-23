@@ -68,6 +68,9 @@ async def bilgi(_, message: Message):
                          "🔐 Adminler için komutlar", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
+                         📌 Sudo Kullanıcı Komutları", callback_data="sudo")
+                 ],[
+                     InlineKeyboardButton(
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
@@ -92,6 +95,10 @@ async def cbbilgi(_, query: CallbackQuery):
         [
           InlineKeyboardButton(
             "🔐 Yönetici Komutları",callback_data ="admin")
+        ],
+        [
+          InlineKeyboardButton(
+            "📌 Sudo Kullanıcı Komutları",callback_data ="sudo")
         ],
         [
           InlineKeyboardButton(
@@ -126,6 +133,25 @@ async def herkes(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("admin"))
 async def admin(_, query: CallbackQuery):
     await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun adminler için komut menüsü 🤩\n\n ▶️ /devam - şarkı çalmaya devam et\n ⏸️ /durdur - çalan parçayı duraklatmak için\n 🔄 /atla- Sıraya alınmış müzik parçasını atlatır.\n ⏹ /son - müzik çalmayı durdurma\n 🔼 /ver botun sadece yönetici için kullanılabilir olan komutlarını kullanabilmesi için kullanıcıya yetki ver\n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n\n ⚪ /asistan - Müzik asistanı grubunuza katılır.\n\n</b>""",
+    reply_markup=InlineKeyboardMarkup(
+             [
+                 [
+                     InlineKeyboardButton(
+                         "🪐 Geliştirici", url=f"https://t.me/{OWNER_NAME}")
+                 ],
+                 [
+                     InlineKeyboardButton(
+                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                 ] 
+             ]
+         )
+         )
+
+
+
+@Client.on_callback_query(filters.regex("sudo"))
+async def admin(_, query: CallbackQuery):
+    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 🤩\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n 🔼 /ver botun sadece yönetici için kullanılabilir olan komutlarını kullanabilmesi için kullanıcıya yetki ver\n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n\n ⚪ /asistan - Müzik asistanı grubunuza katılır.\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
