@@ -1,4 +1,6 @@
 from pyrogram import Client, filters
+from helpers.dbchat import add_served_chat, is_served_chat
+from helpers.dbpunish import is_gbanned_user
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from time import time
 
@@ -214,3 +216,22 @@ async def ping_pong(client: Client, message: Message):
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+
+
+chat_watcher_group = 5
+
+@Client.on_message(group=chat_watcher_group)
+async def chat_watcher_func(_, message: Message):
+    try:
+        userid = message.from_user.id
+    except Exception:
+        return
+    suspect = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
+    if await is_gbanned_user(userid):
+        try:
+            await message.chat.ban_member(userid)
+        except Exception:
+            return
+        await message.reply_text(
+            f"👮🏼 (> {suspect} <)\n\n**Yasaklı** kullanıcı algılandı, bu kullanıcı sudo kullanıcısı tarafından yasaklandı ve bu Sohbetten engellendi !\n\n🚫 **Sebep:** potansiyel spam ve suistimalci."
+        )
