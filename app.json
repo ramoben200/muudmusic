@@ -30,7 +30,7 @@
      "description": "Kendi kullanıcı adınız @ olmadan yazınız",
      "required": true
     },
-    "DATABASE_URL": {
+    "MONGODB_URL": {
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
      "required": true
     },
