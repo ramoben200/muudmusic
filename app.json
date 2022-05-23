@@ -30,16 +30,13 @@
      "description": "Kendi kullanıcı adınız @ olmadan yazınız",
      "required": true
     },
-    "DATABASE_URL": {
+    "ALIVE_NAME": {
+    "description": "telgraf hesabınızın takma adı/adıyla doldurun",
+    "required": true,
+    "value": "Moon lyrcs"
+    },
+    "MONGODB_URL": {
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
-     "required": true
-    },
-    "LOG_CHANNEL": {
-     "description": "Log grubu veya log Kanal id",
-     "required": true
-    },
-    "OWNER_ID": {
-     "description": "Sahip hesabın id yazınız",
      "required": true
     },
     "START_IMAGE": {
