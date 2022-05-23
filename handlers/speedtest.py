@@ -2,7 +2,7 @@ import os
 import wget
 import speedtest
 
-from program.utils.formatters import bytes
+from handlers.formatters import bytes
 from helpers.filters import command, other_filters
 from helpers.decorators import sudo_users_only
 from config import BOT_USERNAME as bname
