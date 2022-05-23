@@ -1,4 +1,4 @@
-from program import __version__
+from handlers import __version__
 from pyrogram import Client, filters, __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
 from helpers.dbchat import add_served_chat, is_served_chat
