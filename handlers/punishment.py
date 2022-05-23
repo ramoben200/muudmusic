@@ -5,10 +5,10 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
-from driver.filters import command
-from driver.decorators import sudo_users_only
-from driver.database.dbchat import get_served_chats
-from driver.database.dbpunish import add_gban_user, is_gbanned_user, remove_gban_user
+from helpers.filters import command
+from helpers.decorators import sudo_users_only
+from helpers.dbchat import get_served_chats
+from helpers.dbpunish import add_gban_user, is_gbanned_user, remove_gban_user
 
 from config import BOT_NAME, SUDO_USERS, BOT_USERNAME as bn
 
