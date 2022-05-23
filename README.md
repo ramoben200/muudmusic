@@ -31,10 +31,12 @@
 - `/asistan` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 
-#### Owner İçin...
+#### Sudo İçin...
 - `/broadcast` - Yayın mesajı
-- `/stats` - grup istatisliği
-- `/alive` botun aktif mesajı (sudo kullanıcı içinde geçerli)
+- `/broadcast_pin` - Yayın mesajını sabitleme
+- `/gban` - küresel yasaklama 
+- `/ungban` - küresel yasaklamayı kaldırma
+- `/alive` - botun çalışma durumunu gösterir
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gecekus/muudmusic)
