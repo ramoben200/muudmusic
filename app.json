@@ -39,10 +39,6 @@
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
      "required": true
     },
-    "OWNER_ID": {
-     "description": "Sahip hesabın id yazınız",
-     "required": true
-    },
     "START_IMAGE": {
      "description": "Botun start mesajı fotoğraf linki",
      "required": false
