@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from driver.database.dblocal import db
+from helpers.dblocal import db
 
 chatsdb = db.chats
 
