@@ -8,13 +8,13 @@ youtube_search_python
 requests
 aiohttp
 aiofiles
-asyncio
+asyncio==3.4.3
 youtube_search
 python-arq
 search_engine_parser
 wget 
 ffmpeg-python
-Pillow
+Pillow==9.1.0
 ujson
 pymongo[srv]
 psutil
