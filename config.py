@@ -21,7 +21,7 @@ OWNER_NAME = getenv("OWNER_NAME", "emily_team")
 ALIVE_NAME = getenv("ALIVE_NAME", "Emily Music")
 MONGODB_URL = getenv("MONGODB_URL")
 PMPERMIT = getenv("PMPERMIT", "ENABLE")
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
 
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
