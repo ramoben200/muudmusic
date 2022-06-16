@@ -101,13 +101,13 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "🔓 Herkes için komutlar", callback_data="herkes")
-                 ],[                     
+                         "🔓 Herkes için komutlar", callback_data="herkes"), 
+
                      InlineKeyboardButton(
                          "🔐 Adminler için komutlar", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "📌 Sudo Kullanıcı Komutları", callback_data="sudo")
+                         "🧙‍♂️ Sudo Kullanıcı Komutları", callback_data="sudo")
                  ],[
                      InlineKeyboardButton(
                          "Ana menü🏠", callback_data="cbstart")
@@ -129,15 +129,14 @@ async def cbbilgi(_, query: CallbackQuery):
       [
         [
           InlineKeyboardButton(
-            "🔓 Herkes için Komutlar", callback_data ="herkes")
-        ],
-        [
+            "🔓 Herkes için Komutlar", callback_data ="herkes"), 
+          
           InlineKeyboardButton(
             "🔐 Yönetici Komutları",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "📌 Sudo Kullanıcı Komutları",callback_data ="sudo")
+            "🧙‍♂️ Sudo Kullanıcı Komutları",callback_data ="sudo")
         ],
         [
           InlineKeyboardButton(
@@ -162,7 +161,7 @@ async def herkes(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
@@ -180,7 +179,7 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
@@ -199,7 +198,7 @@ async def sudo(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
