@@ -136,14 +136,14 @@ async def cbbilgi(_, query: CallbackQuery):
       [
         [
           InlineKeyboardButton(
-            "🔓 Herkes için Komutlar", callback_data ="herkes"), 
+            "🔓 Üye Komutları", callback_data ="herkes"), 
           
           InlineKeyboardButton(
-            "🔐 Yönetici Komutları",callback_data ="admin")
+            "🔐 Admin Komutları",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "🧙‍♂️ Sudo Kullanıcı Komutları",callback_data ="sudo")
+            "🧙‍♂️ Sudo Kullanıcısı Komutları",callback_data ="sudo")
         ],
         [
           InlineKeyboardButton(
