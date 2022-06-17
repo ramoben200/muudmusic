@@ -39,10 +39,6 @@
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
      "required": true
     },
-    "START_IMAGE": {
-     "description": "Botun start mesajı fotoğraf linki",
-     "required": false
-    },
     "API_ID": {
       "description": "my.telegram'dan uygulama kimliği.org/apps",
       "required": true
