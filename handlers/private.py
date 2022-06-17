@@ -17,7 +17,6 @@ from config import (
     OWNER_NAME,
     UPDATES_CHANNEL,
     ASSISTANT_NAME,
-    START_IMAGE, 
 )
 from helpers.filters import command, other_filters2
 #  
@@ -53,12 +52,19 @@ async def _human_time_duration(seconds):
 
 
 
-@Client.on_message(filters.private & filters.incoming & filters.command(["start", f"start@{BOT_USERNAME}"]))
-async def start(_, message: Message):
-                await message.reply_photo(
-                f"{START_IMAGE}",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {BOT_NAME}!\nSesli sohbetlerde müzik çalabilen botum.\n\nBan yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**"""),
-         reply_markup=InlineKeyboardMarkup(
+
+@Client.on_message(
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+)
+async def start_(client: Client, message: Message):
+    await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
+    await message.reply_text(
+        f"""**Merhaba {message.from_user.mention} 🎵\nBen {BOT_NAME}!\n
+● **Sesli sohbetlerde müzik çalabilen botum.**
+
+● **Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**
+""",
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -84,8 +90,9 @@ async def start(_, message: Message):
                 ]
                 
            ]
-        ),
-    )
+        ), 
+    ) 
+    
   
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
@@ -101,13 +108,13 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "🔓 Herkes için komutlar", callback_data="herkes")
-                 ],[                     
+                         "🔓 Üye komutları", callback_data="herkes"), 
+
                      InlineKeyboardButton(
-                         "🔐 Adminler için komutlar", callback_data="admin")
+                         "🔐 Admin komutları", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "📌 Sudo Kullanıcı Komutları", callback_data="sudo")
+                         "🧙‍♂️ Sudo Kullanıcı Komutları", callback_data="sudo")
                  ],[
                      InlineKeyboardButton(
                          "Ana menü🏠", callback_data="cbstart")
@@ -129,15 +136,14 @@ async def cbbilgi(_, query: CallbackQuery):
       [
         [
           InlineKeyboardButton(
-            "🔓 Herkes için Komutlar", callback_data ="herkes")
+            "🔓 Üye Komutları", callback_data ="herkes"), 
+          
+          InlineKeyboardButton(
+            "🔐 Admin Komutları",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "🔐 Yönetici Komutları",callback_data ="admin")
-        ],
-        [
-          InlineKeyboardButton(
-            "📌 Sudo Kullanıcı Komutları",callback_data ="sudo")
+            "🧙‍♂️ Sudo Kullanıcısı Komutları",callback_data ="sudo")
         ],
         [
           InlineKeyboardButton(
@@ -162,7 +168,7 @@ async def herkes(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
@@ -180,7 +186,7 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
@@ -199,7 +205,7 @@ async def sudo(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbhelp")
+                         "⬅️ Geri", callback_data="cbhelp")
                  ] 
              ]
          )
@@ -216,7 +222,7 @@ async def ghelp(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Merhaba {query.from_user.mention} 🎵\nBen {BOT_NAME}!\nSesli sohbetlerde müzik çalabilen botum.\n\nBan yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**""",
+    await query.edit_message_text(f"""● **Merhaba {query.from_user.mention} 🎵\nBen {BOT_NAME}!\n\n● Sesli sohbetlerde müzik çalabilen botum.\n\n● Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
