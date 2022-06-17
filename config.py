@@ -7,6 +7,7 @@ admins = {}
 
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
+START_IMAGE = getenv("START_IMAGE", "https://telegra.ph//file/19a159c0927cb9d9379e9.jpg")
 THUMB_IMG = getenv("THUMB_IMG", "https://telegra.ph//file/36a15fa7b75b0f424bda6.jpg")
 ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph//file/189fe27bff1207dd3eb85.jpg")
 BOT_NAME = getenv("BOT_NAME", "Emily Music")
