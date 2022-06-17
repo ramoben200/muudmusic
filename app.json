@@ -31,9 +31,9 @@
      "required": true
     },
     "ALIVE_NAME": {
-    "description": "telgraf hesabınızın takma adı/adıyla doldurun",
+    "description": "Telgraf hesabınızın takma adı/adıyla doldurun",
     "required": true,
-    "value": "Moon lyrcs"
+    "value": "gє¢є кυѕ̧υ"
     },
     "MONGODB_URL": {
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
