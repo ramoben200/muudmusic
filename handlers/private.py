@@ -108,10 +108,10 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "🔓 Herkes için komutlar", callback_data="herkes"), 
+                         "🔓 Üye komutları", callback_data="herkes"), 
 
                      InlineKeyboardButton(
-                         "🔐 Adminler için komutlar", callback_data="admin")
+                         "🔐 Admin komutları", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
                          "🧙‍♂️ Sudo Kullanıcı Komutları", callback_data="sudo")
