@@ -20,3 +20,5 @@ psutil
 motor
 speedtest-cli
 lyricsgenius
+yt_dlp
+yt-dlp
