@@ -35,10 +35,6 @@
     "required": true,
     "value": "gє¢є кυѕ̧υ"
     },
-    "MONGODB_URL": {
-     "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
-     "required": true
-    },
     "API_ID": {
       "description": "my.telegram'dan uygulama kimliği.org/apps",
       "required": true
