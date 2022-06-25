@@ -18,10 +18,9 @@ SUPPORT_GROUP = getenv("SUPPORT_GROUP", "sohbeti_muhabbet")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "vorovskayamusic") 
 OWNER_NAME = getenv("OWNER_NAME", "emily_team")
 ALIVE_NAME = getenv("ALIVE_NAME", "Emily Music")
-MONGODB_URL = getenv("MONGODB_URL")
 PMPERMIT = getenv("PMPERMIT", "ENABLE")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
 
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
