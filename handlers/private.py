@@ -103,7 +103,7 @@ async def gstart(_, message: Message):
 
 @Client.on_message(filters.private & filters.incoming & filters.command(["help", f"help@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu dört yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.\n- Mesaj sabitleme yetkisi.", 
+      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -128,7 +128,7 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu dört yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.\n- Mesaj sabitleme yetkisi.", 
+    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
