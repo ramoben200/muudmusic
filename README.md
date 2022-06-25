@@ -31,12 +31,7 @@
 - `/asistan` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 
-#### Sudo İçin...
-- `/broadcast` - Yayın mesajı
-- `/broadcast_pin` - Yayın mesajını sabitleme
-- `/gban` - küresel yasaklama 
-- `/ungban` - küresel yasaklamayı kaldırma
-- `/alive` - botun çalışma durumunu gösterir
+
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amahocam/muudmusic)
@@ -47,5 +42,5 @@ Get pyrogram (p)  `SESSION` buradan:
 
 #### Düzen tasarım
 - [#Ge͂̂͝c̨͒ͤ̕͜e̡͝ k̶̴̛ͮ͌̒̃͟͡uş̟̲͎u̼͓̭̝ͦ̂͋̈̋̔](https://t.me/mutsuz_panda)
-- 
+
 - İnstagram [@ama_hocaam](https://instagram.com/ama_hocaam?igshid=YmMyMTA2M2Y=)
