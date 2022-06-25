@@ -2,8 +2,6 @@ from sys import version_info
 from handlers import __version__
 from pyrogram import Client, filters, __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
-from helpers.dbchat import add_served_chat, is_served_chat
-from helpers.dbpunish import is_gbanned_user
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from time import time
 from datetime import datetime
