@@ -114,9 +114,6 @@ async def bilgi(_, message: Message):
                          "🔐 Admin komutları", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "🧙‍♂️ Sudo Kullanıcı Komutları", callback_data="sudo")
-                 ],[
-                     InlineKeyboardButton(
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
@@ -140,10 +137,6 @@ async def cbbilgi(_, query: CallbackQuery):
           
           InlineKeyboardButton(
             "🔐 Admin Komutları",callback_data ="admin")
-        ],
-        [
-          InlineKeyboardButton(
-            "🧙‍♂️ Sudo Kullanıcısı Komutları",callback_data ="sudo")
         ],
         [
           InlineKeyboardButton(
@@ -194,22 +187,7 @@ async def admin(_, query: CallbackQuery):
 
 
 
-@Client.on_callback_query(filters.regex("sudo"))
-async def sudo(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun sudo kullanıcısı için komut menüsü 👨‍💻\n\n » /broadcast =>  yayın yapmak ! \n » /broadcast_pin => yayını gruplarda sabitleme ! \n » /gban => küresel yasaklama ! \n » /ungban => küresel yasağı kaldırma ! \n » /alive => botun çalışma durumunu gösterir ! \n\n</b>""",
-    reply_markup=InlineKeyboardMarkup(
-             [
-                 [
-                     InlineKeyboardButton(
-                         "🪐 Geliştirici", url=f"https://t.me/{OWNER_NAME}")
-                 ],
-                 [
-                     InlineKeyboardButton(
-                         "⬅️ Geri", callback_data="cbhelp")
-                 ] 
-             ]
-         )
-         )
+
 
 
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
@@ -292,20 +270,3 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-chat_watcher_group = 5
-
-@Client.on_message(group=chat_watcher_group)
-async def chat_watcher_func(_, message: Message):
-    try:
-        userid = message.from_user.id
-    except Exception:
-        return
-    suspect = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-    if await is_gbanned_user(userid):
-        try:
-            await message.chat.ban_member(userid)
-        except Exception:
-            return
-        await message.reply_text(
-            f"👮🏼 (> {suspect} <)\n\n**Yasaklı** kullanıcı algılandı, bu kullanıcı sudo kullanıcısı tarafından yasaklandı ve bu Sohbetten engellendi !\n\n🚫 **Sebep:** potansiyel spam ve suistimalci."
-        )
