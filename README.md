@@ -3,7 +3,7 @@
 
 ### Güncellendi aktif.... 
 <p align="center">
-  <img src="https://telegra.ph//file/4c86190fcbe14428c8c6b.jpg">
+  <img src="https://telegra.ph/file/dadcc67ce563ce2381bf6.jpg">
 </p> 
 
 <h3>Sürümler 🧸</h3>
