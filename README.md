@@ -1,5 +1,5 @@
 
-<h2 align="centre">Muud Music Mp3 Oynatıcı 🎵</h2>
+<h2 align="centre">Zenta music mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 
 <p align="center">
@@ -46,6 +46,5 @@ Get pyrogram (p)  `SESSION` buradan:
 [![Run on Repl.it](https://repl.it/badge/github/Makoto-XD/Session-Generator)](https://replit.com/@Makoto-XD/Session-Generator)
 
 #### Düzen tasarım
-- [#By Zenta](https://t.me/Jasmine0wner)
-- 
-- İnstagram [@ama_hocaam](https://instagram.com/ama_hocaam?igshid=YmMyMTA2M2Y=)
+[🇹🇷⃟ꪶ͢Mᴀᴊᴇsᴛᴇ༆ 𖤇 ✞︎ 𝗣 𝗔 𝗧 𝗥 𝗢 𝗡 ꗾ#ΞЯ404](https://t.me/Jasmine0wner)
+
