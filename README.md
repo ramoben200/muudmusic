@@ -39,13 +39,13 @@
 - `/alive` - botun çalışma durumunu gösterir
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amahocam/muudmusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SiyahimsinXSs/guudmus)
 
 Get pyrogram (p)  `SESSION` buradan:
 
 [![Run on Repl.it](https://repl.it/badge/github/Makoto-XD/Session-Generator)](https://replit.com/@Makoto-XD/Session-Generator)
 
 #### Düzen tasarım
-- [#Ge͂̂͝c̨͒ͤ̕͜e̡͝ k̶̴̛ͮ͌̒̃͟͡uş̟̲͎u̼͓̭̝ͦ̂͋̈̋̔](https://t.me/mutsuz_panda)
+- [#By Zenta](https://t.me/Jasmine0wner)
 - 
 - İnstagram [@ama_hocaam](https://instagram.com/ama_hocaam?igshid=YmMyMTA2M2Y=)
