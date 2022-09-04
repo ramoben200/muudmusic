@@ -1,9 +1,9 @@
 {
-  "name": "Telegram Music",
+  "name": "Zenta blət",
   "logo": "https://telegra.ph//file/70b0074875aebdbf20b4f.jpg", 
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/amahocam/muudmusic",
+  "repository": "https://github.com/SiyahimsinXSs/guudmus",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -33,7 +33,7 @@
     "ALIVE_NAME": {
     "description": "Telgraf hesabınızın takma adı/adıyla doldurun",
     "required": true,
-    "value": "gє¢є кυѕ̧υ"
+    "value": "🇹🇷⃟ꪶ͢Mᴀᴊᴇsᴛᴇ༆ 𖤇 ✞︎ 𝗣 𝗔 𝗧 𝗥 𝗢 𝗡 ꗾ#ΞЯ404 !"
     },
     "MONGODB_URL": {
      "description": "Mongodb url si mongodb.com sitesinden alabilirsiniz",
