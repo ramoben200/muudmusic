@@ -57,9 +57,9 @@ async def _human_time_duration(seconds):
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
+    await message.reply_sticker("CAACAgIAAxkBAAFQ3rhjFO9oDL6qA5UMOUhcuvsh1K-xnwACXAEAAhAabSKcIs6F61GChSkE")
     await message.reply_text(
-        f"""**ZENTA SİZİ SALAMLAYIR {message.from_user.mention} 🎵\nMən {BOT_NAME}!\n
+        f"""**@Alay57Chat SİZİ SALAMLAYIR {message.from_user.mention} 🎵\nMən {BOT_NAME}!\n
 ● **sᴇsli sᴏhʙᴇᴛlᴇrdᴇ ʍusiqi çᴀlᴀ ʙilən ʙᴏᴛᴀʍ.**
 
 ● **Go < @Alay57Chat.**
