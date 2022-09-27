@@ -1,5 +1,5 @@
 
-<h2 align="centre">Muud Music Mp3 Oynatıcı 🎵</h2>
+<h2 align="centre">ramo Music Mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 
 <p align="center">
@@ -34,7 +34,7 @@
 
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amahocam/muudmusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ramoben200/muudmusic)
 
 Get pyrogram (p)  `SESSION` buradan:
 
