@@ -1,5 +1,5 @@
 
-<h2 align="centre">Zenta music mp3 Oynatıcı 🎵</h2>
+<h2 align="centre">Ballas music mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 
 <p align="center">
@@ -39,12 +39,4 @@
 - `/alive` - botun çalışma durumunu gösterir
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SiyahimsinXSs/guudmus)
-
-Get pyrogram (p)  `SESSION` buradan:
-
-[![Run on Repl.it](https://repl.it/badge/github/Makoto-XD/Session-Generator)](https://replit.com/@Makoto-XD/Session-Generator)
-
-#### Düzen tasarım
-[🇹🇷⃟ꪶ͢Mᴀᴊᴇsᴛᴇ༆ 𖤇 ✞︎ 𝗣 𝗔 𝗧 𝗥 𝗢 𝗡 ꗾ#ΞЯ404](https://t.me/Jasmine0wner)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ramoben200/guudmus)
